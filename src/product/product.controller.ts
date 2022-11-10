@@ -48,6 +48,6 @@ export class ProductController {
 
   @Delete(':id')
   deleteProduct(@Param('id') id: string): Promise<any> {
-    return this.productService.deleteId(id);
+    return this.productService.delete(id);
   }
 }
